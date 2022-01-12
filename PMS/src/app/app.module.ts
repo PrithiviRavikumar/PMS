@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { EntryModule } from './EntryModule/entry.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { SharedModule } from './SharedModule/shared.module';
+
 import { AdminModule } from './AdminModule/admin.module';
 
 @NgModule({
@@ -20,7 +20,7 @@ import { AdminModule } from './AdminModule/admin.module';
     AppRoutingModule,
     EntryModule,
     BrowserAnimationsModule,
-    SharedModule,
+    
     AdminModule,
   ],
   providers: [],

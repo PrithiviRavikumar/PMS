@@ -11,15 +11,20 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
+
+import { RouterModule } from '@angular/router';
+import { MatListModule } from '@angular/material/list';
 import { FormsModule } from '@angular/forms';
 import { DashboardPageComponent } from './Pages';
-import { SharedModule } from '../SharedModule/shared.module';
-
+import { SharedModule } from './Shared/shared.module';
 
 @NgModule({
-  declarations: [DashboardPageComponent],
+  declarations: [DashboardPageComponent,
+  ],
   imports: [
     CommonModule,
+    MatListModule,
+    RouterModule,
     MatTableModule,
     MatCardModule,
     MatIconModule,
@@ -31,11 +36,9 @@ import { SharedModule } from '../SharedModule/shared.module';
     MatSelectModule,
     MatInputModule,
     FormsModule,
-    SharedModule
+    SharedModule,
   ],  
-  exports: [
-    
-  ],
+  exports: [ ],
   providers: [
    
   ]

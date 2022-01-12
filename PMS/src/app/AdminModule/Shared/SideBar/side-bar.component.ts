@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { routes } from '../../Consists/routes';
+import { routes } from '../../../Consists/routes';
 
 @Component({
   selector: 'app-sidebar',
